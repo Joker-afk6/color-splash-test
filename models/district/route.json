@@ -1,0 +1,161 @@
+{
+  "zone": "silent_district",
+  "steps": [
+    {
+      "step": "plaza \u2192 gate terrace (grand stair)",
+      "type": "riser",
+      "value": 0.25,
+      "limit": 0.35,
+      "technique": "walk"
+    },
+    {
+      "step": "market steps",
+      "type": "riser",
+      "value": 0.25,
+      "limit": 0.35,
+      "technique": "walk"
+    },
+    {
+      "step": "residential flights",
+      "type": "riser",
+      "value": 0.25,
+      "limit": 0.35,
+      "technique": "walk"
+    },
+    {
+      "step": "landing \u2192 crate",
+      "type": "ledge",
+      "value": 0.9,
+      "limit": [
+        0.4,
+        1.7
+      ],
+      "technique": "climb"
+    },
+    {
+      "step": "crate \u2192 R1 terrace",
+      "type": "ledge",
+      "value": 0.8,
+      "limit": [
+        0.4,
+        1.7
+      ],
+      "technique": "climb"
+    },
+    {
+      "step": "R1 \u2192 R2 gap",
+      "type": "gap",
+      "value": 2.5,
+      "limit": 3.0,
+      "technique": "run + jump"
+    },
+    {
+      "step": "R2 \u2192 R3",
+      "type": "ledge",
+      "value": 1.4,
+      "limit": [
+        0.4,
+        1.7
+      ],
+      "technique": "climb"
+    },
+    {
+      "step": "R3 \u2192 R4 gap",
+      "type": "gap",
+      "value": 4.5,
+      "limit": 5.5200000000000005,
+      "technique": "run + double jump"
+    },
+    {
+      "step": "R4 \u2192 aqueduct \u2192 G1",
+      "type": "walk",
+      "value": 0.0,
+      "limit": 0.0,
+      "technique": "walk"
+    },
+    {
+      "step": "G1 \u2192 G2 stairs",
+      "type": "riser",
+      "value": 0.255,
+      "limit": 0.35,
+      "technique": "walk"
+    },
+    {
+      "step": "G2 \u2192 G3 stairs",
+      "type": "riser",
+      "value": 0.255,
+      "limit": 0.35,
+      "technique": "walk"
+    },
+    {
+      "step": "G2 \u2192 ruin island (vine bridge)",
+      "type": "power",
+      "value": 18.0,
+      "limit": 15.3,
+      "technique": "GREEN: vine bridge"
+    },
+    {
+      "step": "spire foot \u2192 watch shelf (living ladder)",
+      "type": "power",
+      "value": 4.6,
+      "limit": 4.17,
+      "technique": "GREEN: living ladder (3 climbs of 1.5 m)"
+    },
+    {
+      "step": "watch shelf \u2192 buttress",
+      "type": "gap",
+      "value": 2.4,
+      "limit": 3.0,
+      "technique": "run + jump"
+    },
+    {
+      "step": "buttress \u2192 west stub",
+      "type": "gap",
+      "value": 1.5,
+      "limit": 3.0,
+      "technique": "run + jump"
+    },
+    {
+      "step": "west stub \u2192 west column",
+      "type": "gap",
+      "value": 2.3,
+      "limit": 3.0,
+      "technique": "run + jump"
+    },
+    {
+      "step": "west column \u2192 lily pad",
+      "type": "gap",
+      "value": 2.3,
+      "limit": 3.0,
+      "technique": "run + jump"
+    },
+    {
+      "step": "lily pad \u2192 north-west stub",
+      "type": "gap",
+      "value": 2.2,
+      "limit": 3.0,
+      "technique": "run + jump"
+    },
+    {
+      "step": "north-west stub \u2192 landing",
+      "type": "gap",
+      "value": 1.5,
+      "limit": 3.0,
+      "technique": "run + jump"
+    },
+    {
+      "step": "island \u2192 grotto (vine curtain, optional)",
+      "type": "power",
+      "value": 4.6,
+      "limit": 4.17,
+      "technique": "GREEN: vine curtain (climb back up 3 \u00d7 1.5 m)"
+    },
+    {
+      "step": "Sky Arbor \u2192 G3 (Bloom Run, timed)",
+      "type": "power",
+      "value": 22.0,
+      "limit": 15.3,
+      "technique": "GREEN: timed lily chain"
+    }
+  ]
+}
