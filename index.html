@@ -1,137 +1,23 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Color Splash</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
-<style>
-  /* Layout: one centred column — name, a spectrum rule, two hero cards, then the controls sheet. */
-  :root {
-    --bg: #ecebe7;          /* drained plaster */
-    --surface: #f7f6f3;
-    --fg: #23222a;
-    --muted: #5d5b66;
-    --line: #cfccc5;
-    --accent: #2f8a4c;      /* GREEN: the one colour awakened so far */
-    --tarin: #c4622d;       /* burnt-orange scarf */
-    --mira: #8c5a7a;        /* dusty mauve jacket */
-    --red: #d2453d; --blue: #3b78c8; --green: #3fa45a; --yellow: #e0b23a; --violet: #8a5cc6;
-    --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
-    --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #17161b; --surface: #211f26; --fg: #ecebf0; --muted: #a9a6b3; --line: #37343e;
-      --accent: #59c47a; --tarin: #e58149; --mira: #c48bb0; color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #17161b; --surface: #211f26; --fg: #ecebf0; --muted: #a9a6b3; --line: #37343e;
-    --accent: #59c47a; --tarin: #e58149; --mira: #c48bb0; color-scheme: dark;
-  }
-  * { box-sizing: border-box; }
-  body {
-    background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body);
-    padding-left: max(16px, env(safe-area-inset-left, 0px));
-    padding-right: max(16px, env(safe-area-inset-right, 0px));
-    padding-block: 40px 56px;
-  }
-  main { max-width: 760px; margin: 0 auto; display: grid; gap: 28px; }
-  header { display: grid; gap: 10px; }
-  .eyebrow { font: 700 12px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-  h1 { margin: 0; font: 800 clamp(44px, 9vw, 76px)/.95 var(--display); letter-spacing: -.02em; text-wrap: balance; }
-  h1 span { color: var(--accent); }
-  .spectrum { display: grid; grid-template-columns: repeat(5, 1fr); height: 6px; border-radius: 3px; overflow: hidden; }
-  .spectrum i { background: var(--line); }
-  .spectrum i.on { background: var(--green); }
-  .lede { margin: 0; color: var(--muted); max-width: 62ch; }
-  .heroes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-  .hero {
-    display: grid; gap: 8px; text-align: left; cursor: pointer; padding: 22px 22px 20px;
-    background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 14px;
-    border-top: 5px solid var(--c); font: inherit; transition: transform .15s ease, border-color .15s ease;
-  }
-  .hero:hover { transform: translateY(-2px); border-color: var(--c); }
-  .hero:focus-visible { outline: 3px solid var(--c); outline-offset: 3px; }
-  .hero b { font: 800 30px/1 var(--display); }
-  .hero small { color: var(--muted); font-size: 14px; }
-  .hero .go { font: 700 14px/1 var(--body); color: var(--c); letter-spacing: .04em; }
-  .opts { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; color: var(--muted); font-size: 15px; }
-  .opts label { display: inline-flex; gap: 8px; align-items: center; cursor: pointer; }
-  .opts input { accent-color: var(--accent); width: 18px; height: 18px; }
-  section { display: grid; gap: 12px; }
-  h2 { margin: 0; font: 600 22px/1.2 var(--display); }
-  .keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 6px 24px; margin: 0; padding: 0; list-style: none; }
-  .keys li { display: flex; gap: 10px; align-items: baseline; min-width: 0; }
-  kbd {
-    flex: none; min-width: 2.2em; text-align: center; padding: 2px 7px; border: 1px solid var(--line);
-    border-bottom-width: 2px; border-radius: 6px; background: var(--surface); font: 700 13px/1.4 var(--body);
-  }
-  .note { margin: 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; color: var(--muted); font-size: 15px; }
-  .note strong { color: var(--fg); }
-  @media (prefers-reduced-motion: reduce) { .hero { transition: none; } }
-</style>
-</head>
-<body>
-
-<main>
-  <header>
-    <div class="eyebrow">Test build · Stage 4 approved</div>
-    <h1>Color <span>Splash</span></h1>
-    <div class="spectrum" aria-label="Colours awakened: GREEN, 1 of 5"><i></i><i></i><i class="on"></i><i></i><i></i></div>
-    <p class="lede">The Silent District, its restoration, and everything GREEN: the vine bridge, the Belverde Ascent, the Bloom Run and the Hidden Grotto. Wake the crystal at the heart of the district to awaken GREEN.</p>
-  </header>
-
-  <div class="heroes">
-    <button class="hero" id="play-tarin" style="--c: var(--tarin)" data-hero="tarin" data-model="tarin_v6">
-      <b>Tarin</b><small>Energetic, warm, a little impulsive. Model v6, in review.</small><span class="go">Play as Tarin →</span>
-    </button>
-    <button class="hero" id="play-mira" style="--c: var(--mira)" data-hero="mira" data-model="mira_v2">
-      <b>Mira</b><small>Clever, observant, analytical. Model v2, in review.</small><span class="go">Play as Mira →</span>
-    </button>
-  </div>
-
-  <div class="opts">
-    <label for="newgame"><input type="checkbox" id="newgame"> Start a new game (clears this browser's save)</label>
-    <label for="skipintro"><input type="checkbox" id="skipintro"> Skip the opening flyover</label>
-  </div>
-
-  <p class="note"><strong>Needs a computer with a keyboard and mouse.</strong> The first load downloads about 95 MB of world and character models, so give it a minute. Progress saves in this browser; it resumes at your last checkpoint after the crystal is awake. Use your browser's Back button to return here.</p>
-
-  <section>
-    <h2>Controls</h2>
-    <ul class="keys">
-      <li><kbd>WASD</kbd> Move</li>
-      <li><kbd>Mouse</kbd> Look around (click to capture, Esc to release)</li>
-      <li><kbd>Space</kbd> Jump, again in the air to double jump; at a ledge, climb</li>
-      <li><kbd>Shift</kbd> Dash (hold to sprint)</li>
-      <li><kbd>E</kbd> Interact: wake the crystal, launch from the seed pod</li>
-      <li><kbd>F</kbd> Use the colour (or left click while the mouse is captured)</li>
-      <li><kbd>1–5</kbd> Choose a colour; <kbd>Q</kbd> next colour</li>
-      <li><kbd>R</kbd> Back to the last checkpoint</li>
-      <li><kbd>Esc</kbd> Skip a cinematic</li>
-      <li><kbd>F3</kbd> Hide the debug panel</li>
-    </ul>
-  </section>
-</main>
-
-<script>
-  const remember = (k, v) => { try { localStorage.setItem(k, v) } catch {} }
-  const recall = (k) => { try { return localStorage.getItem(k) } catch { return null } }
-  const intro = document.getElementById('skipintro')
-  intro.checked = recall('cs.launcher.skipIntro') === '1'
-  intro.addEventListener('change', () => remember('cs.launcher.skipIntro', intro.checked ? '1' : '0'))
-  for (const btn of document.querySelectorAll('.hero')) {
-    btn.addEventListener('click', () => {
-      const q = new URLSearchParams({ character: btn.dataset.hero, model: btn.dataset.model })
-      if (document.getElementById('newgame').checked) q.set('newgame', '')
-      if (intro.checked) q.set('intro', '0')
-      location.href = `game.html?${q.toString().replace(/=(&|$)/g, '$1')}`
-    })
-  }
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Splash</title>
+    <script type="module" crossorigin src="./assets/index-DPNVJDWg.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-9IWx53Ox.css">
+  </head>
+  <body>
+    <canvas id="renderCanvas" touch-action="none"></canvas>
+    <div id="status">Loading…</div>
+    <div id="controls">
+      <span class="devOnly"><strong>The Silent District</strong> · <a href="?level=playground">movement playground</a><br /></span>
+      Click to look around (Esc releases the mouse) · Scroll to zoom<br />
+      <kbd>WASD</kbd>/<kbd>Arrows</kbd> move · <kbd>Space</kbd> jump (hold = higher, again in air = double jump, at a ledge = climb)<br />
+      <kbd>Shift</kbd> dash (hold to sprint) · <kbd>E</kbd> interact · <kbd>R</kbd> respawn at checkpoint · <kbd>F3</kbd> debug<br />
+      Colours: <kbd>1</kbd>–<kbd>5</kbd> choose · <kbd>Q</kbd> next · <kbd>F</kbd> / left click use (aim with the camera)<br />
+      <kbd>H</kbd> hide / show these controls
+    </div>
+  </body>
 </html>
