@@ -1,0 +1,504 @@
+{
+ "source": "VSCO 2 Community Edition (CC0) \u2014 github.com/sgossner/VSCO-2-CE",
+ "rate": 32000,
+ "instruments": {
+  "harp": {
+   "level": 0.0936,
+   "samples": [
+    {
+     "file": "harp_00.m4a",
+     "seconds": 2.6,
+     "midi": 28
+    },
+    {
+     "file": "harp_01.m4a",
+     "seconds": 2.6,
+     "midi": 35
+    },
+    {
+     "file": "harp_02.m4a",
+     "seconds": 2.6,
+     "midi": 41
+    },
+    {
+     "file": "harp_03.m4a",
+     "seconds": 2.6,
+     "midi": 48
+    },
+    {
+     "file": "harp_04.m4a",
+     "seconds": 2.6,
+     "midi": 55
+    },
+    {
+     "file": "harp_05.m4a",
+     "seconds": 2.6,
+     "midi": 62
+    },
+    {
+     "file": "harp_06.m4a",
+     "seconds": 2.6,
+     "midi": 69
+    },
+    {
+     "file": "harp_07.m4a",
+     "seconds": 2.6,
+     "midi": 76
+    },
+    {
+     "file": "harp_08.m4a",
+     "seconds": 2.6,
+     "midi": 83
+    },
+    {
+     "file": "harp_09.m4a",
+     "seconds": 2.338,
+     "midi": 89
+    },
+    {
+     "file": "harp_10.m4a",
+     "seconds": 2.6,
+     "midi": 95
+    },
+    {
+     "file": "harp_11.m4a",
+     "seconds": 1.854,
+     "midi": 101
+    }
+   ]
+  },
+  "flute": {
+   "level": 0.1972,
+   "samples": [
+    {
+     "file": "flute_00.m4a",
+     "seconds": 3.6,
+     "midi": 60
+    },
+    {
+     "file": "flute_01.m4a",
+     "seconds": 3.6,
+     "midi": 64
+    },
+    {
+     "file": "flute_02.m4a",
+     "seconds": 3.6,
+     "midi": 69
+    },
+    {
+     "file": "flute_03.m4a",
+     "seconds": 3.6,
+     "midi": 72
+    },
+    {
+     "file": "flute_04.m4a",
+     "seconds": 3.6,
+     "midi": 76
+    },
+    {
+     "file": "flute_05.m4a",
+     "seconds": 3.6,
+     "midi": 81
+    },
+    {
+     "file": "flute_06.m4a",
+     "seconds": 3.6,
+     "midi": 84
+    },
+    {
+     "file": "flute_07.m4a",
+     "seconds": 3.6,
+     "midi": 88
+    },
+    {
+     "file": "flute_08.m4a",
+     "seconds": 3.6,
+     "midi": 93
+    },
+    {
+     "file": "flute_09.m4a",
+     "seconds": 3.6,
+     "midi": 96
+    }
+   ]
+  },
+  "strings": {
+   "level": 0.031,
+   "samples": [
+    {
+     "file": "strings_00.m4a",
+     "seconds": 4.2,
+     "midi": 55
+    },
+    {
+     "file": "strings_01.m4a",
+     "seconds": 4.2,
+     "midi": 57
+    },
+    {
+     "file": "strings_02.m4a",
+     "seconds": 4.2,
+     "midi": 59
+    },
+    {
+     "file": "strings_03.m4a",
+     "seconds": 4.2,
+     "midi": 62
+    },
+    {
+     "file": "strings_04.m4a",
+     "seconds": 4.2,
+     "midi": 66
+    },
+    {
+     "file": "strings_05.m4a",
+     "seconds": 4.2,
+     "midi": 69
+    },
+    {
+     "file": "strings_06.m4a",
+     "seconds": 4.2,
+     "midi": 72
+    },
+    {
+     "file": "strings_07.m4a",
+     "seconds": 4.2,
+     "midi": 76
+    },
+    {
+     "file": "strings_08.m4a",
+     "seconds": 4.2,
+     "midi": 79
+    },
+    {
+     "file": "strings_09.m4a",
+     "seconds": 4.2,
+     "midi": 83
+    },
+    {
+     "file": "strings_10.m4a",
+     "seconds": 4.2,
+     "midi": 86
+    }
+   ]
+  },
+  "cellos": {
+   "level": 0.04,
+   "samples": [
+    {
+     "file": "cellos_00.m4a",
+     "seconds": 4.2,
+     "midi": 36
+    },
+    {
+     "file": "cellos_01.m4a",
+     "seconds": 4.2,
+     "midi": 40
+    },
+    {
+     "file": "cellos_02.m4a",
+     "seconds": 4.2,
+     "midi": 43
+    },
+    {
+     "file": "cellos_03.m4a",
+     "seconds": 4.2,
+     "midi": 47
+    },
+    {
+     "file": "cellos_04.m4a",
+     "seconds": 4.2,
+     "midi": 50
+    },
+    {
+     "file": "cellos_05.m4a",
+     "seconds": 4.2,
+     "midi": 53
+    },
+    {
+     "file": "cellos_06.m4a",
+     "seconds": 4.2,
+     "midi": 57
+    },
+    {
+     "file": "cellos_07.m4a",
+     "seconds": 4.2,
+     "midi": 60
+    },
+    {
+     "file": "cellos_08.m4a",
+     "seconds": 4.2,
+     "midi": 64
+    },
+    {
+     "file": "cellos_09.m4a",
+     "seconds": 4.2,
+     "midi": 67
+    },
+    {
+     "file": "cellos_10.m4a",
+     "seconds": 4.2,
+     "midi": 71
+    },
+    {
+     "file": "cellos_11.m4a",
+     "seconds": 4.2,
+     "midi": 74
+    },
+    {
+     "file": "cellos_12.m4a",
+     "seconds": 4.2,
+     "midi": 77
+    }
+   ]
+  },
+  "horn": {
+   "level": 0.2354,
+   "samples": [
+    {
+     "file": "horn_00.m4a",
+     "seconds": 3.6,
+     "midi": 36
+    },
+    {
+     "file": "horn_01.m4a",
+     "seconds": 3.6,
+     "midi": 39
+    },
+    {
+     "file": "horn_02.m4a",
+     "seconds": 3.6,
+     "midi": 43
+    },
+    {
+     "file": "horn_03.m4a",
+     "seconds": 3.6,
+     "midi": 46
+    },
+    {
+     "file": "horn_04.m4a",
+     "seconds": 3.6,
+     "midi": 50
+    },
+    {
+     "file": "horn_05.m4a",
+     "seconds": 3.6,
+     "midi": 53
+    },
+    {
+     "file": "horn_06.m4a",
+     "seconds": 3.6,
+     "midi": 57
+    },
+    {
+     "file": "horn_07.m4a",
+     "seconds": 3.6,
+     "midi": 60
+    }
+   ]
+  },
+  "glock": {
+   "level": 0.0688,
+   "samples": [
+    {
+     "file": "glock_00.m4a",
+     "seconds": 2.4,
+     "midi": 79
+    },
+    {
+     "file": "glock_01.m4a",
+     "seconds": 2.4,
+     "midi": 84
+    },
+    {
+     "file": "glock_02.m4a",
+     "seconds": 2.4,
+     "midi": 91
+    },
+    {
+     "file": "glock_03.m4a",
+     "seconds": 2.4,
+     "midi": 96
+    },
+    {
+     "file": "glock_04.m4a",
+     "seconds": 2.4,
+     "midi": 103
+    },
+    {
+     "file": "glock_05.m4a",
+     "seconds": 2.4,
+     "midi": 108
+    }
+   ]
+  },
+  "pizz": {
+   "level": 0.0853,
+   "samples": [
+    {
+     "file": "pizz_00.m4a",
+     "seconds": 1.0,
+     "midi": 55
+    },
+    {
+     "file": "pizz_01.m4a",
+     "seconds": 1.0,
+     "midi": 57
+    },
+    {
+     "file": "pizz_02.m4a",
+     "seconds": 1.0,
+     "midi": 59
+    },
+    {
+     "file": "pizz_03.m4a",
+     "seconds": 1.0,
+     "midi": 62
+    },
+    {
+     "file": "pizz_04.m4a",
+     "seconds": 0.89,
+     "midi": 66
+    },
+    {
+     "file": "pizz_05.m4a",
+     "seconds": 1.0,
+     "midi": 69
+    },
+    {
+     "file": "pizz_06.m4a",
+     "seconds": 1.0,
+     "midi": 72
+    },
+    {
+     "file": "pizz_07.m4a",
+     "seconds": 0.832,
+     "midi": 76
+    },
+    {
+     "file": "pizz_08.m4a",
+     "seconds": 1.0,
+     "midi": 79
+    },
+    {
+     "file": "pizz_09.m4a",
+     "seconds": 0.603,
+     "midi": 83
+    },
+    {
+     "file": "pizz_10.m4a",
+     "seconds": 0.642,
+     "midi": 86
+    }
+   ]
+  },
+  "bass": {
+   "level": 0.1848,
+   "samples": [
+    {
+     "file": "bass_00.m4a",
+     "seconds": 1.4,
+     "midi": 28
+    },
+    {
+     "file": "bass_01.m4a",
+     "seconds": 0.961,
+     "midi": 31
+    },
+    {
+     "file": "bass_02.m4a",
+     "seconds": 1.4,
+     "midi": 36
+    },
+    {
+     "file": "bass_03.m4a",
+     "seconds": 1.4,
+     "midi": 40
+    },
+    {
+     "file": "bass_04.m4a",
+     "seconds": 1.4,
+     "midi": 44
+    },
+    {
+     "file": "bass_05.m4a",
+     "seconds": 1.4,
+     "midi": 49
+    },
+    {
+     "file": "bass_06.m4a",
+     "seconds": 1.4,
+     "midi": 56
+    }
+   ]
+  },
+  "timpani": {
+   "level": 0.1189,
+   "samples": [
+    {
+     "file": "timpani_00.m4a",
+     "seconds": 2.4
+    },
+    {
+     "file": "timpani_01.m4a",
+     "seconds": 2.4
+    },
+    {
+     "file": "timpani_02.m4a",
+     "seconds": 2.4
+    },
+    {
+     "file": "timpani_03.m4a",
+     "seconds": 2.4
+    },
+    {
+     "file": "timpani_04.m4a",
+     "seconds": 2.4
+    }
+   ]
+  },
+  "bassdrum": {
+   "level": 0.1799,
+   "samples": [
+    {
+     "file": "bassdrum_00.m4a",
+     "seconds": 1.6
+    },
+    {
+     "file": "bassdrum_01.m4a",
+     "seconds": 1.6
+    }
+   ]
+  },
+  "snare": {
+   "level": 0.1084,
+   "samples": [
+    {
+     "file": "snare_00.m4a",
+     "seconds": 0.325
+    },
+    {
+     "file": "snare_01.m4a",
+     "seconds": 0.166
+    }
+   ]
+  },
+  "shaker": {
+   "level": 0.0671,
+   "samples": [
+    {
+     "file": "shaker_00.m4a",
+     "seconds": 0.182
+    },
+    {
+     "file": "shaker_01.m4a",
+     "seconds": 0.189
+    },
+    {
+     "file": "shaker_02.m4a",
+     "seconds": 0.254
+    }
+   ]
+  }
+ }
+}
